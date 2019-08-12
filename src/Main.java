@@ -19,6 +19,7 @@ public class Main {
         biggestSequence.forEach(pathNode -> System.out.print(pathNode.toString() + " "));
     }
 
+    // other way to solve this task is to use recursion function, but it will fail with StackOverflow on big input
     static List<List<Integer>> findPathsOfOddEvenNumbers(String filename) throws IOException {
         File file = new File(filename);
 
